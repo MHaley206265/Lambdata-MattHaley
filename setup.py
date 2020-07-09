@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="lambdata-dspt6-MattHaley",
+    name="lambdata_dspt6_MattHaley",
     version="0.0.1",
     author="Matt Haley",
     author_email="matthew-haley@lambdastudents.com",
