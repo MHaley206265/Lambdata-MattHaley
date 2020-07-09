@@ -24,3 +24,4 @@ into train, validation, and test respectively
 
 ## Reliances
 pandas
+scikit-learn
