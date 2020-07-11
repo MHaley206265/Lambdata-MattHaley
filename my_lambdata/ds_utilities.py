@@ -8,13 +8,13 @@ class DfHelper():
     def __init__(self, df):
         self.df = df.copy()
 
-    def enlarge(self, n):
+    def enlarge(n):
         """
         This function will multiply the input by 100
         """
         return n*100
 
-    def has_null(self, df=self.df, details=True):
+    def has_null(df=self.df, details=True):
         """ has_null:
 
               Takes in a dataframe (df) and returns a value of
@@ -55,7 +55,7 @@ class DfHelper():
         else:
             return False
 
-    def train_val_test(self, df=self.df, train_size=0.7, val_size=0.5):
+    def train_val_test(df=self.df, train_size=0.7, val_size=0.5):
         """train_val_test:
 
               This function splits a dataframe into train, validation
