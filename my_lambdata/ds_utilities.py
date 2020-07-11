@@ -8,13 +8,13 @@ class DfHelper():
     def __init__(self, df):
         self.df = df.copy()
 
-    def enlarge(n):
+    def enlarge(self, n):
         """
         This function will multiply the input by 100
         """
         return n*100
 
-    def has_null(df=self.df, details=True):
+    def has_null(self, details=True):
         """ has_null:
 
               Takes in a dataframe (df) and returns a value of
@@ -37,7 +37,7 @@ class DfHelper():
                                     or not the detailed table will be
                                     displayed.
         """
-        df = df.copy()
+        df = self.df.copy()
         count = 0
         data = []
 
@@ -55,7 +55,7 @@ class DfHelper():
         else:
             return False
 
-    def train_val_test(df=self.df, train_size=0.7, val_size=0.5):
+    def train_val_test(self, train_size=0.7, val_size=0.5):
         """train_val_test:
 
               This function splits a dataframe into train, validation
@@ -78,7 +78,7 @@ class DfHelper():
                                   set. The remaining percentage will be used
                                   to make the test set.
         """
-        df = df.copy()
+        df = self.df.copy()
 
         train, val_test = train_test_split(df, train_size=train_size)
         val, test = train_test_split(val_test, train_size=val_size)

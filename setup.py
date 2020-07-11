@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="lambdata_dspt6_MattHaley",
-    version="0.0.5",
+    version="0.0.6",
     author="Matt Haley",
     author_email="matthew-haley@lambdastudents.com",
     description="A small package with helpful functions for working with DataFrames",
